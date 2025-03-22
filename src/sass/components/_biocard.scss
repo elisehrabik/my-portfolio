@@ -1,0 +1,45 @@
+@import "../globals/colors";
+
+.biocard {
+  background-color: var(--main-bg);
+  color: var(--text-light);
+  border: 2px solid var(--secondary-bg);
+  border-radius: 10px;
+  padding: 3rem;
+  width: 80rem;
+  max-width: 90vw;
+  min-height: 20rem;
+  margin: 20px auto;
+
+  .profilePic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--secondary-bg);
+  }
+
+  .bio {
+    min-height: 6rem;
+  }
+
+  .skills {
+    li {
+      margin: 5px;
+    }
+  }
+
+  .toggleButton {
+    margin-bottom: 5rem;
+    color: var(--accent-text-light);
+    background-color: var(--button-primary-bg);
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid white;
+
+    &:hover {
+      background-color: var(--button-primary-bg-hover);
+    }
+  }
+}

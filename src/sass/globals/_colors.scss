@@ -1,0 +1,23 @@
+:root {
+    --main-bg: hsl(0, 0%, 0%);
+    --secondary-bg: hsl(265, 100%, 86%);
+    --third-bg: rgb(205, 228, 255);
+
+
+    --text-dark: hsl(0, 0%, 0%);
+    --text-light: hsl(0, 0%, 100%);
+    --accent-text-light: hsl(265, 100%, 86%);
+
+
+    --button-primary-bg:transparent;
+    --button-primary-text: hsl(0, 0%, 0%);
+    --button-primary-outline: hsl(0, 0%, 0%);
+    --button-primary-bg-hover:hsla(215, 52%, 70%, 0.183);
+
+
+    --link:  hsl(266, 51%, 39%);
+    --link-hover: hsl(265, 100%, 12%);
+    --link-active:  hsl(282, 100%, 21%);
+  }
+
+  
