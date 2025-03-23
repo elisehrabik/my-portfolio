@@ -1,34 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./index.css";
+import "./sass/styles.scss";
+import BioCard from "./components/BioCard/BioCard";
+import SkillGallery from "./components/SkillGallery";
+import "./sass/components/_main.scss";
+
+const skillData = [
+  {name: "HTML"},
+  {name: "CSS"}, 
+  {name: "SASS"}, 
+  {name: "JavaScript"}, 
+  {name: "jQuery"}, 
+  {name: "PHP"}, 
+  {name: "Laravel"}, 
+  {name: "Java"}, 
+  {name: "Python"},
+  {name: "Bootstrap"},
+  {name: "GitHub"},
+  {name: "Wordpress"},
+  {name: "Adobe"},
+  {name: "Figma"}, 
+  {name: "UX/UI Design"},
+  {name: "Wireframing"},
+  {name: "Databases"},
+  {name: "UML Diagrams"}
+]
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="main">
+    <BioCard
+      image="src\img\profile_picture228.jpg"
+      name="Elise Hrabik"
+      bio="I'm a web technologies student with a strong foundation in HTML, CSS, PHP, JavaScript, Java, and UX/UI principles. I love crafting responsive and user-friendly websites that enhance the digital experience. I'm currently diving deeper into front-end development, accessibility, and design best practices. My goal is to contribute meaningful projects that showcase both my technical and creative skill."
+    />
+    <SkillGallery skills={skillData} />
+    </div>
   )
 }
 
