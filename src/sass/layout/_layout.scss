@@ -1,0 +1,19 @@
+.navbar {
+    padding: 12px;
+
+    &__link {
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding: 8px;
+
+        &--home {
+            font-weight: bold;
+        }
+
+        &:hover {
+            text-decoration: underline;
+            color:white;
+        }
+    }
+}

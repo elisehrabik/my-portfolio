@@ -1,0 +1,73 @@
+@use '../util' as u;
+
+.card {
+  padding: 16px;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  @include u.box-shadow();
+  text-align: center;
+  background-color: var(--dark-bg);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+
+  &--project {
+    // border-left: 4px solid var(--button-primary-bg-hover);
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: var(--accent-text-light);
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: var(--text-light);
+  }
+
+  &__button {
+    margin-bottom: 5rem;
+    color: var(--text-light);
+    background: transparent;
+    // padding: 8px 15px;
+    font-size: 1rem;
+    border: 1px solid white;
+    border: none;
+    padding: 8px 12px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+
+    &--toggle {
+      background: var(--button-primary-bg-hover);
+    }
+
+    &:hover {
+      background: var(--button-primary-bg-hover);
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 5rem;
+    color: var(--text-light);
+    background-color: var(--button-primary-bg);
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: 1px solid white;
+    padding: 8px 12px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+    width: 8rem;
+
+    &:hover {
+      background-color: var(--link-active);
+      color: var(--text-light);
+    }
+  }
+}
