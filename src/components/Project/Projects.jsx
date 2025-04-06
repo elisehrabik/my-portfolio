@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import projectList from "./projects";
+import projectList from "./projectList";
 
 function Projects() {
     return (

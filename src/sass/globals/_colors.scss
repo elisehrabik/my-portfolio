@@ -7,11 +7,15 @@
     --text-dark: hsl(0, 0%, 0%);
     --text-light: hsl(0, 0%, 100%);
     --accent-text-light: hsl(265, 100%, 86%);
+    --accent-text-dark:hsl(266, 51%, 39%);
+    --accent-text-error: hsl(326, 100%, 37%);
     
     --button-primary-bg:transparent;
     --button-primary-text: hsl(0, 0%, 0%);
     --button-primary-outline: hsl(0, 0%, 0%);
     --button-primary-bg-hover:hsla(215, 52%, 70%, 0.183);
+    
+    --my-shadow: hsla(266, 51%, 39%, 0.174);
 
 
     --link:  hsl(266, 51%, 39%);
