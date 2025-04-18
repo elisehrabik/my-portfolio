@@ -20,6 +20,12 @@ body {
   justify-content: center;
   margin: 0 auto;
   padding: 2rem;
+
+  @include u.theme(u.$light-background, u.$light-text);
+
+  &.dark-mode {
+      @include u.theme(u.$dark-background, u.$dark-text);
+  }
 }
 
 a {

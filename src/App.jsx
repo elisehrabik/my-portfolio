@@ -6,6 +6,8 @@ import SkillGallery from './components/SkillGallery';
 // import ProjectList from './components/Project/projects';
 import Projects from './components/Project/Projects';
 import ProjectDetail from './components/Project/ProjectDetail';
+import ThemeProvider from "./components/ThemeProvider";
+
 
 import './index.css';
 import './sass/components/_main.scss';
@@ -35,6 +37,8 @@ const skillData = [
 
 function App() {
   return (
+    <ThemeProvider>
+
     <Router>
       <div>
         <nav className="navbar">
@@ -61,7 +65,7 @@ function App() {
                   <BioCard
                     image="src/img/profile_picture228.jpg"
                     name="Elise Hrabik"
-                    bio="I'm a web technologies student..."
+                    bio="I'm a web technologies student with a strong foundation in HTML, CSS, PHP, JavaScript, Java, and UX/UI principles. I love crafting responsive and user-friendly websites that enhance the digital experience. I'm currently diving deeper into front-end development, accessibility, and design best practices. My goal is to contribute meaningful projects that showcase both my technical and creative skill"
                   />
                 </section>
 
@@ -84,6 +88,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </ThemeProvider>
   );
 }
 export default App;

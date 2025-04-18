@@ -1,8 +1,9 @@
 @use "../globals/colors";
+@use '../util' as u;
 
 .biocard {
-  background-color: var(--main-bg);
-  color: var(--text-light);
+  // background-color: var(--main-bg);
+  // color: var(--text-light);
   border: 2px solid var(--secondary-bg);
   border-radius: 10px;
   padding: 3rem;
