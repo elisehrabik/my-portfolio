@@ -7,6 +7,7 @@ import SkillGallery from './components/SkillGallery';
 import Projects from './components/Project/Projects';
 import ProjectDetail from './components/Project/ProjectDetail';
 import ThemeProvider from "./components/ThemeProvider";
+import portrait from "./img/profile_picture228.jpg";
 
 
 import './index.css';
@@ -39,7 +40,7 @@ function App() {
   return (
     <ThemeProvider>
 
-    <Router>
+    <Router basename="/my-portfolio">
       <div>
         <nav className="navbar">
           <a href="/" className="navbar__link">
@@ -63,7 +64,7 @@ function App() {
               <React.Fragment>
                 <section id="bio">
                   <BioCard
-                    image="src/img/profile_picture228.jpg"
+                    image={portrait}
                     name="Elise Hrabik"
                     bio="I'm a web technologies student with a strong foundation in HTML, CSS, PHP, JavaScript, Java, and UX/UI principles. I love crafting responsive and user-friendly websites that enhance the digital experience. I'm currently diving deeper into front-end development, accessibility, and design best practices. My goal is to contribute meaningful projects that showcase both my technical and creative skill"
                   />
