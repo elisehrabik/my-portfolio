@@ -1,21 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import BioCard from './components/BioCard/BioCard';
-import SkillGallery from './components/SkillGallery';
-// import ProjectDetail from './components/Project/ProjectDetail';
-// import ProjectList from './components/Project/projects';
+import Hero from './components/Hero';
+import ExpertiseGallery from './components/Expertise/ExpertiseGallery';
 import Projects from './components/Project/Projects';
 import ProjectDetail from './components/Project/ProjectDetail';
 import ThemeProvider from "./components/ThemeProvider";
 import portrait from "./img/profile_picture228.jpg";
-
-
 import './index.css';
 import './sass/components/_main.scss';
 import './sass/styles.scss';
 import FeedbackForm from './components/FeedbackForm';
 
-const skillData = [
+const expertiseData = [
   { name: 'HTML' },
   { name: 'CSS' },
   { name: 'SASS' },
@@ -42,6 +38,8 @@ function App() {
 
     <Router basename="/my-portfolio">
       <div>
+
+        {/* Navbar */}
         <nav className="navbar">
           <a href="/" className="navbar__link">
             Home
@@ -62,29 +60,32 @@ function App() {
             path="/"
             element={
               <React.Fragment>
-                <section id="bio">
-                  <BioCard
-                    image={portrait}
-                    name="Elise Hrabik"
-                    bio="I'm a web technologies student with a strong foundation in HTML, CSS, PHP, JavaScript, Java, and UX/UI principles. I love crafting responsive and user-friendly websites that enhance the digital experience. I'm currently diving deeper into front-end development, accessibility, and design best practices. My goal is to contribute meaningful projects that showcase both my technical and creative skill"
-                  />
+
+                {/* Hero */}
+                <section id="hero">
+                  <Hero/>
                 </section>
 
-                <section id="skills">
+                <section id="expertise">
+                  <ExpertiseGallery/>
+                </section>
+
+                {/* <section id="skills">
                   <SkillGallery skills={skillData} />
-                </section>
+                </section> */}
 
-                <section id="projects">
+                {/* <section id="projects">
                   <Projects />
                 </section>
 
                 <section id="feedback">
                   <FeedbackForm />
-                </section>
+                </section> */}
               </React.Fragment>
             }
           />
 
+            {/* Project Pages */}
           <Route path="/project/:id" element={<ProjectDetail />} />
         </Routes>
       </div>

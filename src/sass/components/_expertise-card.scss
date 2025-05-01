@@ -1,0 +1,33 @@
+@use '../util' as u;
+
+.expertise-card {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 2px solid var(--text-light);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    text-align: center;
+    transition: border-color 0.3s ease;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    max-width: 32rem;
+
+  
+    &__title {
+      font-size: clamp(2rem, 4vw, 2rem);
+      margin: 1rem 0;      
+      color: var(--text-light);
+    } 
+  
+    &__description {
+      font-size: clamp(1.5rem, 3vw, 1.5rem);
+      color: var(--text-light);
+      line-height: 1.2;
+    }
+  
+    &:hover {
+      border-color: var(--link-hover);
+  }
+}
+  

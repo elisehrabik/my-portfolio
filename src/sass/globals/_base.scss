@@ -1,5 +1,11 @@
 @use '../util' as u;
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -21,10 +27,20 @@ body {
   margin: 0 auto;
   padding: 2rem;
 
-  @include u.theme(u.$light-background, u.$light-text);
+  @include u.theme(
+    u.$light-background,
+    u.$light-text,
+    u.$light-link,
+    u.$light-link-hover
+  );
 
   &.dark-mode {
-      @include u.theme(u.$dark-background, u.$dark-text);
+    @include u.theme(
+      u.$dark-background,
+      u.$dark-text,
+      u.$dark-link,
+      u.$dark-link-hover
+    );
   }
 }
 
@@ -35,3 +51,4 @@ a {
 a:hover {
   color: var(--link-hover);
 }
+
