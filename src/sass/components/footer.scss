@@ -1,0 +1,72 @@
+@use '../util' as u;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--primary-bg);
+  padding: 2rem;
+  color: var(--text-light);
+  text-align: center;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.105);  
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 5rem;
+
+  &__column {
+    flex: 1;
+    min-width: 200px;
+
+    &--profile {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+    }
+
+    &--nav,
+    &--social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+  }
+
+  &__avatar {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 2px solid var(--text-light);
+  }
+
+  &__name {
+    font-size: u.rem(22);
+    margin: 0.5rem 0 0;
+  }
+
+  &__title {
+    font-size: u.rem(16);
+    opacity: 0.75;
+    margin-top: 0.25rem;
+  }
+
+  &__link,
+  &__social-link {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: u.rem(18);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}

@@ -14,7 +14,7 @@ function FeedbackForm(props) {
         setFormData({ ...formData, [e.target.name]: e.target.value })
         setErrors({ ...errors, [e.target.name]: "" })
     }
-
+ 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
@@ -40,47 +40,47 @@ function FeedbackForm(props) {
     }
 
     return (
+      <>
+      <h2 className="feedback-form__title">Contact Me</h2>
       <form onSubmit={handleSubmit} className="feedback-form">
-        <h1 className="contact-header">Contact Me</h1>
-      <label className="feedback-form__label">
-        Name:
         <input 
           type="text"
           name="name"
           value={formData.name}
           onChange={handleChange}
           className="feedback-form__input"
+          placeholder="Name"
         />
         {errors.name && <p className="feedback-form__error">{errors.name}</p>}
-      </label>
+
     
-      <label className="feedback-form__label">
-        Email:
         <input 
           type="text"
           name="email"
           value={formData.email}
           onChange={handleChange}
           className="feedback-form__input"
+          placeholder="Email"
         />
         {errors.email && <p className="feedback-form__error">{errors.email}</p>}
-      </label>
+
     
-      <label className="feedback-form__label">
-        Feedback:
+
         <textarea 
           name="feedback"
           value={formData.feedback}
           onChange={handleChange}
           className="feedback-form__textarea"
+          placeholder="Message"
         />
         {errors.feedback && <p className="feedback-form__error">{errors.feedback}</p>}
-      </label>
+
     
       <button type="submit" className="feedback-form__button">
-        Submit
+        let's talk
       </button>
     </form>
+    </>
     );
 }
 

@@ -10,27 +10,9 @@ import './index.css';
 import './sass/components/_main.scss';
 import './sass/styles.scss';
 import FeedbackForm from './components/FeedbackForm';
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
-const expertiseData = [
-  { name: 'HTML' },
-  { name: 'CSS' },
-  { name: 'SASS' },
-  { name: 'JavaScript' },
-  { name: 'jQuery' },
-  { name: 'PHP' },
-  { name: 'Laravel' },
-  { name: 'Java' },
-  { name: 'Python' },
-  { name: 'Bootstrap' },
-  { name: 'GitHub' },
-  { name: 'Wordpress' },
-  { name: 'Adobe' },
-  { name: 'Figma' },
-  { name: 'UX/UI Design' },
-  { name: 'Wireframing' },
-  { name: 'Databases' },
-  { name: 'UML Diagrams' },
-];
 
 function App() {
   return (
@@ -40,20 +22,7 @@ function App() {
       <div>
 
         {/* Navbar */}
-        <nav className="navbar">
-          <a href="/" className="navbar__link">
-            Home
-          </a>
-          <a href="#skills" className="navbar__link">
-            Skills
-          </a>
-          <a href="#projects" className="navbar__link">
-            Projects
-          </a>
-          <a href="#feedback" className="navbar__link">
-            Contact
-          </a>
-        </nav>
+        <NavBar />
 
         <Routes>
           <Route
@@ -72,23 +41,26 @@ function App() {
 
                 {/* <section id="skills">
                   <SkillGallery skills={skillData} />
-                </section> */}
+                </section>*/}
 
-                {/* <section id="projects">
+                <section id="projects">
                   <Projects />
-                </section>
+                </section> 
 
                 <section id="feedback">
                   <FeedbackForm />
-                </section> */}
+                </section>
               </React.Fragment>
             }
           />
 
             {/* Project Pages */}
           <Route path="/project/:id" element={<ProjectDetail />} />
+          
         </Routes>
+        
       </div>
+      <Footer />
     </Router>
     </ThemeProvider>
   );
