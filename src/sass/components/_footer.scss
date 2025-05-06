@@ -15,7 +15,7 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  margin-top: 5rem;
+  margin-top: 8rem;
 
   &__links-wrapper {
     display: flex;
@@ -87,7 +87,6 @@
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 1rem;
-    border: 3px solid var(--text-light);
   }
 
   &__name {

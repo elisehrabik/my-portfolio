@@ -1,15 +1,15 @@
 
-$light-start:  hsl(0, 0%, 96%);
-$light-end: hsl(295, 92%, 95%);
+$light-start:  hsl(0, 0%, 100%);
+$light-end: hsl(314, 100%, 91%);
 $light-background: linear-gradient(to bottom, $light-start, $light-end);
 // $light-background: hsl(0, 0%, 96%);
 $light-text: hsl(0, 0%, 8%);
 $light-link: hsl(219, 100%, 8%);
 $light-link-hover: hsl(309, 100%, 23%);
-$light-transparent-background: hsla(309, 100%, 23%, 0.105);
-$light-contact-form:  hsla(309, 100%, 35%, 0.098);
-$light-form-input: hsla(0, 0%, 100%, 0.226);
-$light-footer:  hsla(309, 100%, 40%, 0.059);
+$light-transparent-background:hsla(274, 37%, 29%, 0.066);
+$light-contact-form: hsla(240, 35%, 22%, 0.066);
+$light-form-input: rgba(255, 255, 255, 0.598);
+$light-footer: hsla(240, 35%, 22%, 0.066);
 
 $dark-start: hsl(252, 100%, 5%);
 $dark-end: hsl(309, 100%, 10%);
