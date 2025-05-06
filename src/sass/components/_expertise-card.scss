@@ -1,5 +1,16 @@
 @use '../util' as u;
 
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .expertise-card {
   width: 100%;
   max-width: 32rem;
@@ -14,11 +25,23 @@
   text-align: center;
   gap: 1rem;
   transition: border-color 0.3s ease;
+  opacity: 0;
+  transform: translateX(-50px);
+
+  &.animate {
+    animation: slideInLeft 0.8s ease forwards;
+
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: 0.5s * $i;
+    }
+  }
+}
 
   &__title {
     font-size: 2rem;
     color: var(--text-light);
-      
+
     @media (max-width: 768px) {
       font-size: u.rem(30);
     }
