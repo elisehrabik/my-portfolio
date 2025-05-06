@@ -7,5 +7,5 @@ function ExpertiseCard({ name, description }) {
     );
   }
   
-  export default ExpertiseCard;
+  export default ExpertiseCard; 
   
