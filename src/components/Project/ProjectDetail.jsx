@@ -1,6 +1,8 @@
 import { useParams, Link } from 'react-router-dom';
 import projectList from './projectList';
 
+import { HashLink } from 'react-router-hash-link';
+
 function ProjectDetail() {
   const { id } = useParams();
   const project = projectList.find((proj) => proj.id.toString() === id);
@@ -15,25 +17,26 @@ function ProjectDetail() {
       <p className="project-detail__text">{project.description}</p>
 
       <a
-            href={project.websiteUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-detail__link"
-          >Explore Site</a>
+        href={project.websiteUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-detail__link"
+      >
+        Explore Site
+      </a>
 
       <div className="project-detail__columns-wrapper">
-
-      <div className="project-detail__img-column">
-        <div className="mockup-container project-detail__image">
-          <div className="screen-content">
-            <img src={project.layoutUrl} alt="Website Screenshot" />
+        <div className="project-detail__img-column">
+          <div className="mockup-container project-detail__image">
+            <div className="screen-content">
+              <img src={project.layoutUrl} alt="Website Screenshot" />
+            </div>
+            <img
+              src="/my-portfolio/img/laptopframe.png"
+              alt="Laptop Frame"
+              className="laptop-frame"
+            />
           </div>
-          <img
-            src="/my-portfolio/img/laptopframe.png"
-            alt="Laptop Frame"
-            className="laptop-frame"
-          />
-        </div>
         </div>
 
         {/* <div className="project-detail__img-column">
@@ -73,9 +76,10 @@ function ProjectDetail() {
       <p className="project-detail__full-description">
         {project.fullDescription}
       </p>
-      <Link to="/#projects" className="project-detail__link">
+
+      <HashLink smooth to="/#projects" className="project-detail__link">
         Back to Projects
-      </Link>
+      </HashLink>
     </div>
   );
 }
