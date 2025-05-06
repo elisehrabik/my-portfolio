@@ -1,6 +1,8 @@
 @use '../util' as u;
 
 .navbar {
+  position: relative;
+  z-index: 10;
     align-items: center;
     text-align: center;
     display: flex;
@@ -12,7 +14,7 @@
           }
         
 
-    &__link {
+    &__link { 
         text-transform: uppercase;
         color: var(--link);
         // font-size: clamp(1rem, 2vw, 1.5rem);
@@ -22,7 +24,8 @@
           }
         
         &:hover {
-            color: var(--link-hover);
+            color: pink;
+            text-decoration:none;
           }
         }
 

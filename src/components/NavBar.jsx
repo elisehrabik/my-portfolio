@@ -4,7 +4,7 @@ function NavBar() {
         <a href="/" className="navbar__link">
           Home
         </a>
-        <a href="#skills" className="navbar__link">
+        <a href="#expertise" className="navbar__link">
           Skills
         </a>
         <a href="#projects" className="navbar__link">

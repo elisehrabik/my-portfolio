@@ -77,7 +77,11 @@
       background-color: rgba(255, 255, 255, 0.075) !important;
       color: var(--text-light);
       border: 2px solid var(--text-light);
+    }
 
+    @media (max-width: 1024px) {
+      padding: 10px 18px;
+      font-size: u.rem(21);
     }
   }
 
