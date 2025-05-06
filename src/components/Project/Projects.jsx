@@ -1,6 +1,7 @@
 import ProjectCard from './ProjectCard';
 import projectList from './projectList';
 
+
 function Projects() {
   return (
     <div className="projects">

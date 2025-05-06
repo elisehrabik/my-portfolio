@@ -1,21 +1,14 @@
+import { HashLink } from 'react-router-hash-link';
+
 function NavBar() {
-    return (
-      <nav className="navbar">
-        <a href="/" className="navbar__link">
-          Home
-        </a>
-        <a href="#expertise" className="navbar__link">
-          Skills
-        </a>
-        <a href="#projects" className="navbar__link">
-          Projects
-        </a>
-        <a href="#feedback" className="navbar__link">
-          Contact
-        </a>
-      </nav>
-    );
-  }
-  
-  export default NavBar;
-  
+  return (
+    <nav className="navbar">
+      <HashLink className="navbar__link" smooth to="/">Home</HashLink>
+      <HashLink className="navbar__link" smooth to="/#expertise">Skills</HashLink>
+      <HashLink className="navbar__link" smooth to="/#projects">Projects</HashLink>
+      <HashLink className="navbar__link" smooth to="/#feedback">Contact</HashLink>
+    </nav>
+  );
+}
+
+export default NavBar;

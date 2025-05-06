@@ -5,6 +5,7 @@ import ExpertiseGallery from './components/Expertise/ExpertiseGallery';
 import Projects from './components/Project/Projects';
 import ProjectDetail from './components/Project/ProjectDetail';
 import ThemeProvider from "./components/ThemeProvider";
+import ScrollToTop from './components/ScrollToTop';
 import portrait from "./img/profile_picture228.jpg";
 import './index.css';
 import './sass/components/_main.scss';
@@ -23,7 +24,7 @@ function App() {
 
         {/* Navbar */}
         <NavBar />
-
+        <ScrollToTop />
         <Routes>
           <Route
             path="/"
