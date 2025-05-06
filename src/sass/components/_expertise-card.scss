@@ -8,7 +8,8 @@
   padding: clamp(1rem, 3vw, 1.5rem);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 4rem;
   align-items: center;
   text-align: center;
   gap: 1rem;
