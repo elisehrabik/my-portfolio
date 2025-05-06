@@ -13,10 +13,15 @@
 //     color: $text-color;
 // }
 
-@mixin theme($background-color, $text-color, $link-color: null, $link-hover-color: null) {
+@mixin theme($background-color, $text-color, $link-color: null, $link-hover-color: null, $transparent-background, $contact-form, $form-input, $footer) {
     --main-bg: #{$background-color};
     --text-light: #{$text-color};
     --link: #{if($link-color != null, $link-color, $text-color)};
     --link-hover: #{if($link-hover-color != null, $link-hover-color, $text-color)};
+    --transparent-bg: #{$transparent-background};
+    --contact-form: #{$contact-form};
+    --form-input: #{$form-input};
+    --footer: #{$footer};
   }
+  
   

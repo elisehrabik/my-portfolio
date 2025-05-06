@@ -5,7 +5,7 @@
     min-height: 35rem;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.14);
+    background-color: var(--contact-form);
     border-radius: 0.75rem;
     font-family: 'Roboto Mono', sans-serif;
     display: flex;
@@ -44,7 +44,7 @@
   
     &__input,
     &__textarea {
-      background-color: rgba(255, 255, 255, 0.14);
+      background-color: var(--form-input);
       width: 100%;
       padding: 0.5rem 0.75rem;
       margin-top: 0.25rem;
@@ -89,18 +89,17 @@
     }
   
     &__button {
-      color: var(--text-light);
+      color: var(--link);
       background-color: var(--button-primary-bg);
       padding: 12px 24px;
       font-size: u.rem(24);
       border-radius: 50px;
-      border: 2px solid var(--text-light);
+      border: 2px solid var(--link);
       margin-top: 1rem;
     
       &:hover {
-        background-color: rgba(0, 0, 0, 0.128) !important;
-        color: var(--text-light);
-        border: 2px solid var(--text-light);
+        background-color: var(--transparent-bg);
+        border: 2px solid var(--link);
       }
     
       @media (max-width: 768px) {

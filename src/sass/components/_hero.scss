@@ -23,7 +23,6 @@
     text-align: center;
     margin-top: -5rem;
     position: relative;
-    overflow: hidden;
 
     &__diamond {
       position: absolute;
@@ -32,7 +31,7 @@
       background: radial-gradient(circle at center, #a78bfa, #f472b6, transparent 80%);
       filter: blur(100px);
       opacity: 0.6;
-      z-index: 0;
+      z-index: 0; 
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(45deg);

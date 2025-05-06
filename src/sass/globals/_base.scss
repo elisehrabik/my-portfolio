@@ -30,7 +30,11 @@ body {
     u.$light-background,
     u.$light-text,
     u.$light-link,
-    u.$light-link-hover
+    u.$light-link-hover,
+    u.$light-transparent-background,
+    u.$light-contact-form,
+    u.$light-form-input,
+    u.$light-footer
   );
 
   &.dark-mode {
@@ -38,7 +42,11 @@ body {
       u.$dark-background,
       u.$dark-text,
       u.$dark-link,
-      u.$dark-link-hover
+      u.$dark-link-hover,
+      u.$dark-transparent-background,
+      u.$dark-contact-form,
+      u.$dark-form-input,
+      u.$dark-footer
     );
   }
 }

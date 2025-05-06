@@ -3,10 +3,13 @@ $light-start:  hsl(0, 0%, 96%);
 $light-end: hsl(295, 92%, 95%);
 $light-background: linear-gradient(to bottom, $light-start, $light-end);
 // $light-background: hsl(0, 0%, 96%);
-$light-text: hsl(219, 100%, 8%);
+$light-text: hsl(0, 0%, 8%);
 $light-link: hsl(219, 100%, 8%);
-$light-link-hover: hsl(220, 100%, 25%);
-
+$light-link-hover: hsl(309, 100%, 23%);
+$light-transparent-background: hsla(309, 100%, 23%, 0.105);
+$light-contact-form:  hsla(309, 100%, 35%, 0.098);
+$light-form-input: hsla(0, 0%, 100%, 0.226);
+$light-footer:  hsla(309, 100%, 40%, 0.059);
 
 $dark-start: hsl(252, 100%, 5%);
 $dark-end: hsl(309, 100%, 10%);
@@ -15,3 +18,7 @@ $dark-background: linear-gradient(to bottom, $dark-start, $dark-end);
 $dark-text: hsl(0, 0%, 100%);
 $dark-link: hsl(0, 0%, 100%);
 $dark-link-hover: hsl(210, 53%, 88%);
+$dark-transparent-background: hsla(309, 100%, 10%, 0.363);
+$dark-contact-form:  hsla(0, 0%, 100%, 0.116);
+$dark-form-input: hsla(0, 0%, 100%, 0.14);
+$dark-footer: hsla(251, 100%, 4%, 0.219);
