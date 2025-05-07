@@ -108,6 +108,12 @@
         font-size: u.rem(21);
       }
     }
-    
+
+    &__input:-webkit-autofill,
+    &__textarea:-webkit-autofill {
+      transition: background-color 100000s ease-in-out 0s;
+      -webkit-text-fill-color: var(--text-light) !important;
+      caret-color: var(--text-light);
+    } 
   }
   
