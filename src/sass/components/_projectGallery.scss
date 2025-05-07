@@ -1,5 +1,16 @@
 @use '../util' as u;
 
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .projects {
   padding: 2rem;
   text-align: center;
@@ -24,6 +35,20 @@
     justify-content: center;
     // gap: 2rem;
     margin-bottom: 5rem;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+
+
+    &.animate {
+      animation: slideInLeft 0.8s ease forwards;
+    
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+          animation-delay: 0.15s * $i;
+        }
+      }
+    }    
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -49,7 +74,7 @@
 
   @keyframes float {
     0%   { transform: translateY(0); }
-    50%  { transform: translateY(-10px); }
+    50%  { transform: translateY(-8px); }
     100% { transform: translateY(0); }
   }
 
@@ -61,8 +86,6 @@
     object-fit: cover;
     margin-left: -10vw;
     transition: margin 0.3s ease;
-    animation: float 3s ease-in-out infinite;
-
   
     @media (max-width: 1024px) {
       margin-left: -5vw;

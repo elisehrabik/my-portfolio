@@ -11,7 +11,7 @@ function ExpertiseGallery() {
             key={expertise.id}
             name={expertise.title}
             description={expertise.description}
-            index={i + 1}
+            index={i + 1} 
           />
         ))}
       </div>
