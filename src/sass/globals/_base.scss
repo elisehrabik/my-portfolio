@@ -34,7 +34,8 @@ body {
     u.$light-transparent-background,
     u.$light-contact-form,
     u.$light-form-input,
-    u.$light-footer
+    u.$light-footer, 
+    u.$light-vine-color
   );
 
   &.dark-mode {
@@ -46,7 +47,8 @@ body {
       u.$dark-transparent-background,
       u.$dark-contact-form,
       u.$dark-form-input,
-      u.$dark-footer
+      u.$dark-footer,
+      u.$dark-vine-color
     );
   }
 }

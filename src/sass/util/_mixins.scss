@@ -13,7 +13,7 @@
 //     color: $text-color;
 // }
 
-@mixin theme($background-color, $text-color, $link-color: null, $link-hover-color: null, $transparent-background, $contact-form, $form-input, $footer) {
+@mixin theme($background-color, $text-color, $link-color: null, $link-hover-color: null, $transparent-background, $contact-form, $form-input, $footer, $vine-color) {
     --main-bg: #{$background-color};
     --text-light: #{$text-color};
     --link: #{if($link-color != null, $link-color, $text-color)};
@@ -22,6 +22,7 @@
     --contact-form: #{$contact-form};
     --form-input: #{$form-input};
     --footer: #{$footer};
+    --vine-color: #{$vine-color};
   }
   
   
