@@ -126,7 +126,6 @@
     object-fit: cover;
     margin-left: -10vw;
     transition: margin 0.3s ease;
-    animation: float 3s ease-in-out infinite;
   
     @media (max-width: 1024px) {
       margin-left: -5vw;

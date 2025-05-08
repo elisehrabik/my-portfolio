@@ -1,6 +1,11 @@
 import profileImage from '../img/profile_picture228.jpg';
-import { FaEnvelope, FaGithub, FaLinkedin, FaCommentDots } from 'react-icons/fa';
-
+import {
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+  FaCommentDots,
+} from 'react-icons/fa';
+import { HashLink } from 'react-router-hash-link';
 
 function Footer() {
   return (
@@ -20,25 +25,29 @@ function Footer() {
         {/* Grouped nav + social columns */}
         <div className="footer__links-wrapper">
           <div className="footer__column footer__column--nav">
-            <a href="/" className="footer__link">
+            <HashLink className="footer__link" smooth to="/">
               Home
-            </a>
-            <a href="#skills" className="footer__link">
+            </HashLink>
+            <HashLink className="footer__link" smooth to="/#expertise">
               Skills
-            </a>
-            <a href="#projects" className="footer__link">
+            </HashLink>
+            <HashLink className="footer__link" smooth to="/#projects">
               Projects
-            </a>
-            <a href="#feedback" className="footer__link">
+            </HashLink>
+            <HashLink className="footer__link" smooth to="/#feedback">
               Contact
-            </a>
+            </HashLink>
           </div>
 
           <div className="footer__column footer__column--social">
-            <a href="#contact" className="footer__social-link">
+            <HashLink className="footer__link" smooth to="/#feedback">
               <FaCommentDots className="footer__icon" /> Contact
-            </a>
-            <a href="mailto:elise.hrabik@gmail.com" className="footer__social-link">
+            </HashLink>
+
+            <a
+              href="mailto:elise.hrabik@gmail.com"
+              className="footer__social-link"
+            >
               <FaEnvelope className="footer__icon" /> Email
             </a>
             <a
