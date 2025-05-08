@@ -1,0 +1,44 @@
+.feedback-section {
+    position: relative;
+
+
+&__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(3rem, 2.293rem + 3.008vw, 5rem);   
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__vine-container {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      width: 120px;
+    }
+
+    &--bottom-right {
+        bottom: clamp(-8rem, -5vw, -13rem);     
+        left: clamp(25%, 35vw, 35%);            
+        transform: translateX(-50%) scaleX(-1);
+        transform-origin: bottom center;
+      }
+      
+  }
+
+  &__vine-path,
+  &__leaf-path {
+    stroke: var(--vine-color);
+  }
+
+  &__vine {
+    width: clamp(12rem, 25vw, 30rem);
+    height: auto;
+    pointer-events: none;
+  }
+
+}
